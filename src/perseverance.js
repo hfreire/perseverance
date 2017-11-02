@@ -22,7 +22,7 @@ const execRateable = function (fn) {
 }
 
 const execRetrieable = function (fn) {
-  return retry(() => execRateable.bind(this)(fn))
+  return retry(() => execRateable.bind(this)(fn), _.get(this._options, 'retry'))
 }
 
 const execBreakable = function (fn) {
@@ -43,7 +43,7 @@ const defaultOptions = {
   retry: { max_tries: 3, interval: 1000, timeout: 3000, throw_original: true },
   breaker: { timeout: 12000, threshold: 80, circuitDuration: 30000 },
   rate: {
-    requests: 1,
+    executions: 1,
     period: 250,
     queue: { concurrency: 1 }
   }
@@ -55,7 +55,7 @@ class Perseverance {
 
     this._circuitBreaker = new Brakes(execRetrieable.bind(this), _.get(this._options, 'breaker'))
 
-    this._rate = Promise.promisifyAll(new RateLimiter(_.get(this._options, 'rate.requests'), _.get(this._options, 'rate.period')))
+    this._rate = Promise.promisifyAll(new RateLimiter(_.get(this._options, 'rate.executions'), _.get(this._options, 'rate.period')))
     this._queue = new PQueue(_.get(this._options, 'rate.queue'))
   }
 
