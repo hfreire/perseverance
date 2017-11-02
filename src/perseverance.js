@@ -12,13 +12,13 @@ const Brakes = require('brakes')
 const PQueue = require('p-queue')
 const { RateLimiter } = require('limiter')
 
-const execFn = function (fn) {
+const execFunction = function (fn) {
   return fn()
 }
 
 const execRateable = function (fn) {
   return this._rate.removeTokensAsync(1)
-    .then(() => execFn(fn))
+    .then(() => execFunction(fn))
 }
 
 const execRetrieable = function (fn) {
@@ -40,11 +40,11 @@ const execQueueable = function (fn) {
 }
 
 const defaultOptions = {
-  retry: { max_tries: 3, interval: 1000, timeout: 3000, throw_original: true },
-  breaker: { timeout: 12000, threshold: 80, circuitDuration: 30000 },
+  retry: { max_tries: 2, interval: 500, timeout: 2000, throw_original: true },
+  breaker: { timeout: 2500, threshold: 80, circuitDuration: 10000 },
   rate: {
     executions: 1,
-    period: 250,
+    period: 10,
     queue: { concurrency: 1 }
   }
 }
