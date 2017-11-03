@@ -1,6 +1,6 @@
 {
   "name": "perseverance",
-  "description": "Make your functions :muscle: resilient and :poop: fail-fast to failures or :watch: delays",
+  "description": "Make your functions :muscle: resilient and :hand: fail-fast to :poop: failures or :watch: delays",
   "version": "0.0.0",
   "main": "lib/index.js",
   "repository": {
