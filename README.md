@@ -12,7 +12,7 @@
 > Add rate limit, retry and circuit-breaker behaviour to your functions.
 
 ### Features
-* Limits :raised_hand: rate of executions to comply with third-party API limits :white_check_mark: 
+* Limits :no_entry_sign: rate of executions to comply with third-party API limits :white_check_mark: 
 * Retries :shit: failing executions in temporary, unexpected system and :boom: network failures :white_check_mark:
 * Uses circuit breakers to :hand: fail-fast until it is safe to retry :white_check_mark: 
 * Supports [Bluebird](https://github.com/petkaantonov/bluebird) :bird: promises :white_check_mark:
