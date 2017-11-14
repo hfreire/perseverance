@@ -10,9 +10,16 @@
 describe('Perseverance', () => {
   let subject
   let Brakes
+  let Limiter
+  let PQueue
 
   before(() => {
     Brakes = td.constructor([ 'exec' ])
+
+    Limiter = td.object([])
+    Limiter.RateLimiter = td.constructor([])
+
+    PQueue = td.constructor([])
   })
 
   afterEach(() => td.reset())
@@ -21,8 +28,36 @@ describe('Perseverance', () => {
     beforeEach(() => {
       td.replace('brakes', Brakes)
 
+      td.replace('limiter', Limiter)
+
+      td.replace('p-queue', PQueue)
+
       const Perseverance = require('../src/perseverance')
       subject = new Perseverance()
+    })
+
+    it('should construct brakes instance with default options', () => {
+      const captor = td.matchers.captor()
+
+      td.verify(new Brakes(td.matchers.anything(), captor.capture()), { times: 1 })
+
+      const options = captor.value
+      options.should.have.property('timeout')
+      options.should.have.property('threshold')
+      options.should.have.property('circuitDuration')
+    })
+
+    it('should construct rate-limiter instance with default options', () => {
+      td.verify(new Limiter.RateLimiter(1, 10), { times: 1 })
+    })
+
+    it('should construct p-queue instance with default options', () => {
+      const captor = td.matchers.captor()
+
+      td.verify(new PQueue(captor.capture()), { times: 1 })
+
+      const options = captor.value
+      options.should.have.property('concurrency', 1)
     })
   })
 

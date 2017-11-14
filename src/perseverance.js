@@ -51,7 +51,7 @@ const defaultOptions = {
 
 class Perseverance {
   constructor (options = {}) {
-    this._options = _.defaultsDeep(options, defaultOptions)
+    this._options = _.defaultsDeep({}, options, defaultOptions)
 
     this._circuitBreaker = new Brakes(execRetrieable.bind(this), _.get(this._options, 'breaker'))
 
@@ -69,7 +69,7 @@ class Perseverance {
         throw new Error('invalid arguments')
       }
     })
-      .then((options) => execQueueable.bind(this)(fn))
+      .then(() => execQueueable.bind(this)(fn))
   }
 }
 
