@@ -41,7 +41,7 @@ const execQueueable = function (fn) {
 
 const defaultOptions = {
   retry: { max_tries: 2, interval: 500, timeout: 2000, throw_original: true },
-  breaker: { timeout: 2500, threshold: 80, circuitDuration: 10000 },
+  breaker: { timeout: 2500, threshold: 0.8, circuitDuration: 10000 },
   rate: {
     executions: 1,
     period: 10,
