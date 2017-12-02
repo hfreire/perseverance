@@ -1,11 +1,8 @@
 # Make your functions :muscle: resilient and :traffic_light: fail-fast to :poop: failures or :watch: delays
 
-[![JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 [![Build Status](https://travis-ci.org/hfreire/perseverance.svg?branch=master)](https://travis-ci.org/hfreire/perseverance)
 [![Coverage Status](https://coveralls.io/repos/github/hfreire/perseverance/badge.svg?branch=master)](https://coveralls.io/github/hfreire/perseverance?branch=master)
-[![Greenkeeper badge](https://badges.greenkeeper.io/hfreire/perseverance.svg)](https://greenkeeper.io/)
 [![](https://img.shields.io/github/release/hfreire/perseverance.svg)](https://github.com/hfreire/perseverance/releases)
-[![](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/npm/v/perseverance.svg)](https://www.npmjs.com/package/perseverance)
 [![Downloads](https://img.shields.io/npm/dt/perseverance.svg)](https://www.npmjs.com/package/perseverance) 
 
@@ -22,6 +19,14 @@
 npm install perseverance
 ```
 
+### How to contribute
+You can contribute either with code (e.g., new features, bug fixes and documentation) or by [donating 5 EUR](https://paypal.me/hfreire/5). You can read the [contributing guidelines](./docs/CONTRIBUTING.md) for instructions on how to contribute with code. 
+
+All donation proceedings will go to the [Sverige för UNHCR](https://sverigeforunhcr.se), a swedish partner of the [UNHCR - The UN Refugee Agency](http://www.unhcr.org), a global organisation dedicated to saving lives, protecting rights and building a better future for refugees, forcibly displaced communities and stateless people.
+
 ### Used by
 * [request-on-steroids](https://github.com/hfreire/request-on-steroids) - An HTTP client :sparkles: with retry, circuit-breaker and tor support :package: out-of-the-box
 * [facebook-login-for-robots](https://github.com/hfreire/facebook-login-for-robots) - Facebook Login for 🤖 robots
+
+### License
+Read the [license](./LICENSE.md) for permissions and limitations.
