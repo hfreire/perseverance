@@ -11,7 +11,7 @@ git clone https://github.com/my-github-username/perseverance
 
 Change current directory
 ```
-cd get-me-date
+cd perseverance
 ```
 
 Install NPM dependencies
