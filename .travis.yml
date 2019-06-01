@@ -9,8 +9,6 @@ notifications:
   slack:
     rooms:
       secure: cc5U6Aiuru+6vGQJMfC554AhaieJVZkxXnvxY+5xpvi0kZc0/SJZjiW7ttrDT0eAx5mp+IHyH02WzAFIGOfa3nh2woPz5QjDFN1515XgCv+1xkXYs0fKc5m7KRwGYlvcFogXkUBJVB8g6PHk3LU3uCEO9E7kRdc952cGstTHyCQe2W/xV6hmy1g7TIDgRIhUmBC9wvcbdLopjhELRvTQk1/jfHLnRh1v0BD6un9QTejApvwD4Ld3yUwvPotnhVHq9U7hf3IWDZey+loS2Oa2eU6O/TotkT5g0WNzBJipmgWpWc4q2gvP73Xw7fnhCZoJeSKE3r1bhKCKrjtfvlvKk/kNV1dvqziWowTiV4AUFann3pYnNyXUkMn2D1Y9upIFiD2jP96PVhOOBiBVRwgOtHPhLjtAD10dw/Igi37E2JnnQ2M6DEbE58f09C1eJDjDolPrHPJL9xZ8LgByqeV3i+h/BVkgrWF/i0c5vUKAHSSolAfDRmSj1pZA4xEkan6oEFkuzg5rwM6vLFmlsVhbr/0K0EdKzixykb/NkEl94BhrTyR5ZhjjhfiJR4Qa7qMOYFTMuERCAYMQcJnFFgeWMtmaxKLr42cHkdrnqm76Ap+U0/pp8riPY2hU0u2O8+Y7sKDpgrl7iI6rXt/1N9oBCAHKf7xWSD1SzhH65whTVPk=
-    on_success: never
-    on_failure: change
     on_pull_requests: false
 install:
 - npm install
