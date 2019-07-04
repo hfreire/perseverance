@@ -23,7 +23,8 @@
     "limiter": "1.1.4",
     "lodash": "4.17.11",
     "random-http-useragent": "1.1.13",
-    "p-queue": "6.0.2"
+    "p-queue": "6.0.2",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
@@ -61,9 +62,12 @@
     "prepublish": "npm run compile",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
     "semantic-release": "./node_modules/.bin/semantic-release",
-    "commit": "./node_modules/.bin/commit-wizard"
+    "commit": "./node_modules/.bin/commit-wizard",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "release": {
     "analyzeCommits": "simple-commit-message"
-  }
+  },
+  "snyk": true
 }
