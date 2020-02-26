@@ -9,7 +9,7 @@ const _ = require('lodash')
 const Promise = require('bluebird')
 const retry = require('bluebird-retry')
 const Brakes = require('brakes')
-const PQueue = require('p-queue')
+const { default: PQueue } = require('p-queue')
 const { RateLimiter } = require('limiter')
 
 const execFunction = function (fn) {

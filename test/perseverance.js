@@ -18,8 +18,6 @@ describe('Perseverance', () => {
 
     Limiter = td.object([])
     Limiter.RateLimiter = td.constructor([])
-
-    PQueue = td.constructor([])
   })
 
   afterEach(() => td.reset())
@@ -30,7 +28,7 @@ describe('Perseverance', () => {
 
       td.replace('limiter', Limiter)
 
-      td.replace('p-queue', PQueue)
+      PQueue = td.replace('p-queue').default
 
       const Perseverance = require('../src/perseverance')
       subject = new Perseverance()
