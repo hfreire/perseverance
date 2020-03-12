@@ -2,6 +2,7 @@
 
 [![](https://github.com/hfreire/perseverance/workflows/ci/badge.svg)](https://github.com/hfreire/perseverance/actions?workflow=ci)
 [![Coverage Status](https://coveralls.io/repos/github/hfreire/perseverance/badge.svg?branch=master)](https://coveralls.io/github/hfreire/perseverance?branch=master)
+[![Known Vulnerabilities](https://snyk.io/test/github/hfreire/perseverance/badge.svg)](https://snyk.io/test/github/hfreire/perseverance)
 [![](https://img.shields.io/github/release/hfreire/perseverance.svg)](https://github.com/hfreire/perseverance/releases)
 [![Version](https://img.shields.io/npm/v/perseverance.svg)](https://www.npmjs.com/package/perseverance)
 [![Downloads](https://img.shields.io/npm/dt/perseverance.svg)](https://www.npmjs.com/package/perseverance) [![Greenkeeper badge](https://badges.greenkeeper.io/hfreire/perseverance.svg)](https://greenkeeper.io/)
