@@ -23,7 +23,7 @@
     "limiter": "1.1.5",
     "lodash": "4.17.19",
     "random-http-useragent": "1.1.27",
-    "p-queue": "6.5.0"
+    "p-queue": "6.6.0"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
