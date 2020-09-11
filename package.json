@@ -22,7 +22,7 @@
     "brakes": "2.8.0",
     "limiter": "1.1.5",
     "lodash": "4.17.20",
-    "random-http-useragent": "1.1.29",
+    "random-http-useragent": "1.1.30",
     "p-queue": "6.6.1"
   },
   "devDependencies": {
