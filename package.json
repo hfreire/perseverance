@@ -46,7 +46,7 @@
     "pre-git": "3.17.1",
     "semantic-release": "17.1.2",
     "testdouble": "3.16.1",
-    "snyk": "1.399.1"
+    "snyk": "1.400.0"
   },
   "config": {
     "pre-git": {
