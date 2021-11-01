@@ -20,7 +20,7 @@
     "bluebird": "3.7.2",
     "bluebird-retry": "0.11.0",
     "brakes": "2.8.0",
-    "limiter": "1.1.5",
+    "limiter": "2.1.0",
     "lodash": "4.17.21",
     "random-http-useragent": "1.1.34",
     "p-queue": "6.6.2"
